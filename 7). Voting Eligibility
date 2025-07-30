@@ -1,0 +1,19 @@
+import java.io.*;
+class VotingEligiblity
+{
+    public static void main(String[] args)
+    {
+        int age = 21;
+        if(age >= 18)
+        {
+            System.out.println("You are elgible to vote.");
+        }
+        else
+        {
+            System.out.println("You are not elgible to vote.");
+        }
+    }
+output:
+You are elgible to vote.
+
+=== Code Execution Successful ===
