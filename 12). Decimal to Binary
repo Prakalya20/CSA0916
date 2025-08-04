@@ -1,0 +1,13 @@
+import java.io.*;
+
+public class DecimalToBinary {
+    public static void main(String[] args) {
+        int decimal = 10; 
+        String binary = Integer.toBinaryString(decimal);
+        System.out.println("Binary representation of " + decimal + " is: " + binary);
+    }
+}
+Output:
+Binary representation of 10 is: 1010
+
+=== Code Execution Successful ===
