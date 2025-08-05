@@ -1,0 +1,28 @@
+import java.io.*;
+
+public class ExceptionDemo {
+    public static void main(String[] args) {
+        try {
+            int a = 0;
+            int b = 10;
+            int result = b / a;  
+            System.out.println("result: " + result);
+
+            int[] numbers = {1, 2, 3};
+            System.out.println("number at index 5: " + numbers[5]);  
+        } 
+        catch (ArithmeticException e) {
+            System.out.println("Arithmetic exception caught: " + e.getMessage());
+        } 
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index out of bounds exception caught: " + e.getMessage());
+        }
+
+        System.out.println("Program continues after exception handling");
+    }
+}
+output:
+Arithmetic exception caught: / by zero
+Program continues after exception handling
+
+=== Code Execution Successful ===
